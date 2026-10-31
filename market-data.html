@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overlay Management Fees &amp; Tax Overlay Value — Market Data | portfoliooverlay.com</title>
+<meta name="description" content="Market data for portfoliooverlay.com: aggregated public figures with sources, updated October 25, 2026.">
+<link rel="canonical" href="https://portfoliooverlay.com/market-data">
+<meta property="og:title" content="Overlay Management Fees & Tax Overlay Value — Market Data | portfoliooverlay.com">
+<meta property="og:description" content="Market data for portfoliooverlay.com: aggregated public figures with sources, updated October 25, 2026.">
+<meta property="og:url" content="https://portfoliooverlay.com/market-data">
+<meta property="og:type" content="website">
+<style>
+:root{--char:#14161a;--copper:#c47b4a;--paper:#f4f2ed;--steel:#8a94a6}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:var(--paper);color:var(--char);overflow-x:hidden}
+.mono{font-family:'IBM Plex Mono',monospace}
+nav{position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(20,22,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(196,123,74,.25)}
+nav .brand{font-family:'IBM Plex Mono',monospace;color:#fff;font-size:.85rem;letter-spacing:.15em}
+nav .brand b{color:var(--copper)}
+nav a.cta{background:var(--copper);color:#fff;padding:.55rem 1.5rem;text-decoration:none;font-size:.8rem;letter-spacing:.1em;font-weight:500;transition:.3s}
+nav a.cta:hover{background:#d68d5c;transform:translateY(-2px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,26,.35) 0%,rgba(20,22,26,.88) 100%)}
+.hero-inner{position:relative;z-index:2;padding:8rem 3rem 5rem;max-width:1200px;width:100%}
+.hero .tag{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.3em;color:var(--copper);margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.6rem,6.5vw,5rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;max-width:800px}
+.hero h1 span{color:var(--copper)}
+.hero p{max-width:560px;margin:1.5rem 0 2rem;font-weight:300;font-size:1.1rem;opacity:.85}
+.btn{display:inline-block;padding:.95rem 2.6rem;text-decoration:none;font-weight:500;letter-spacing:.05em;transition:.3s;font-size:.92rem}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(196,123,74,.45)}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff;margin-left:1rem}
+.btn-line:hover{border-color:var(--copper);color:var(--copper)}
+section{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:7rem 3rem}
+.rv{opacity:0;transform:translateY(36px);transition:.8s ease}
+.rv.on{opacity:1;transform:none}
+.k{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.28em;color:var(--copper);text-transform:uppercase;margin-bottom:1rem}
+h2{font-size:clamp(1.9rem,3.8vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-bottom:1.4rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;margin-top:2rem}
+.grid2 img{width:100%;border-radius:3px;box-shadow:0 18px 50px rgba(0,0,0,.14)}
+.grid2 p{color:#3d434e;margin-bottom:1.1rem;font-size:1.02rem}
+.codebox{background:var(--char);color:#d4d9e2;font-family:'IBM Plex Mono',monospace;font-size:.85rem;padding:1.8rem;border-radius:4px;margin-top:1.5rem;border-left:3px solid var(--copper);line-height:1.9}
+.codebox .cm{color:var(--steel)} .codebox .kw{color:var(--copper)}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:3rem 0}
+.statcard{background:#fff;border:1px solid #e2ded4;padding:2.2rem;text-align:center;border-radius:3px;transition:.3s}
+.statcard:hover{border-color:var(--copper);transform:translateY(-4px)}
+.statcard .n{font-size:2.6rem;font-weight:700;color:var(--char)}
+.statcard .n em{color:var(--copper);font-style:normal}
+.statcard .t{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);margin-top:.6rem}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2.5rem 0}
+.gal img{width:100%;height:260px;object-fit:cover;border-radius:3px;transition:.4s;filter:saturate(.85)}
+.gal img:hover{filter:saturate(1.15);transform:scale(1.02)}
+.buyers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.bcard{background:var(--char);color:#fff;padding:2.4rem;border-radius:4px;position:relative;overflow:hidden;transition:.3s}
+.bcard::after{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:.4s}
+.bcard:hover::after{transform:scaleX(1)}
+.bcard h3{font-size:1.2rem;margin-bottom:.7rem}
+.bcard p{font-size:.92rem;color:#aab2c2}
+.bcard .mono{font-size:.7rem;color:var(--copper);letter-spacing:.2em}
+.cta{background:var(--char);border-radius:6px;padding:4.5rem 3rem;text-align:center;color:#fff;margin:3rem 0}
+.cta .pr{font-size:3.2rem;font-weight:700;color:var(--copper);margin:1.2rem 0}
+footer{background:#0d0e11;color:#6b7280;text-align:center;padding:2.5rem;font-size:.82rem;font-family:'IBM Plex Mono',monospace}
+footer a{color:var(--copper);text-decoration:none}
+@media(max-width:860px){.grid2,.buyers,.statrow,.gal{grid-template-columns:1fr}section{padding:4rem 1.5rem}.hero-inner{padding:6rem 1.5rem 4rem}nav{padding:1rem 1.2rem}.btn-line{margin-left:0;margin-top:.8rem}}
+.bcard .rlink{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.18em;color:var(--copper);text-decoration:none;margin-top:1.2rem;display:inline-block}
+.bcard .rlink:hover{text-decoration:underline}
+</style>
+<style>
+/* ---- market-data page additions ---- */
+.dp-wrap{max-width:960px;margin:0 auto;padding:2rem 1.25rem 3rem}
+.dp-updated{display:inline-block;border:1px solid #b08d57;padding:.45rem .9rem;border-radius:999px;font-size:.9rem;margin:1rem 0}
+.dp-updated strong{color:#b08d57}
+.dp-table{width:100%;border-collapse:collapse;margin:1.2rem 0 2rem;font-size:.95rem}
+.dp-table th,.dp-table td{border-bottom:1px solid rgba(176,141,87,.35);padding:.6rem .5rem;text-align:left;vertical-align:top;overflow-wrap:break-word;word-break:break-word}
+.dp-table th{color:#b08d57}
+.dp-table td a{overflow-wrap:break-word;word-break:break-word}
+.trend-up{color:#4caf7d;font-weight:700;white-space:nowrap}
+.trend-down{color:#d97b6c;font-weight:700;white-space:nowrap}
+.trend-base{color:#b08d57;font-weight:700;white-space:nowrap}
+.dp-note{background:rgba(176,141,87,.12);border-left:3px solid #b08d57;padding:1rem 1.2rem;margin:1.5rem 0}
+.dp-note h3,.dp-wrap h2,.dp-wrap h3{overflow-wrap:break-word;word-break:break-word}
+.dp-wrap h1,.dp-wrap h2{overflow-wrap:break-word;word-break:break-word}
+.dp-cta{margin:2rem 0}
+.dp-cta a{display:inline-block;padding:.9rem 1.4rem;min-height:44px;line-height:1.4}
+.dp-changelog{border-top:1px solid rgba(176,141,87,.35);margin-top:2.5rem;padding-top:1rem}
+@media(max-width:480px){.dp-wrap{padding:1.25rem .9rem 2rem}.dp-table{font-size:.85rem}.dp-table th,.dp-table td{padding:.5rem .35rem}}
+
+/* Phase 1 assembly 2026-10-31 */
+@media (max-width:900px){h1{font-size:clamp(44px,11vw,72px)!important}}
+
+/* Phase 1 assembly 2026-10-31 — nav solid correction */
+@media (max-width:900px){nav{background:rgb(20,22,26)!important;backdrop-filter:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "portfoliooverlay.com — Overlay Management Fees & Tax Overlay Value — Market Data",
+  "description": "Aggregated public market figures for portfoliooverlay.com, with source attribution for every figure. Information only, not investment or professional advice.",
+  "temporalCoverage": "2003–2024",
+  "dateModified": "2026-10-25",
+  "creator": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "sourceOrganization": [
+    "https://www.lgim.com",
+    "https://www.vanguard.com",
+    "https://am.jpmorgan.com"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://portfoliooverlay.com/market-data"
+}
+</script>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1{font-size:clamp(30px,8.5vw,58px)!important;line-height:1.15!important}
+}
+</style>
+</head>
+<body>
+<nav><div class="brand">Prime Domain Capital</div><div class="price-tag">Buy Now <b>$15,000</b></div></nav>
+<main class="dp-wrap">
+<p class="dp-updated">Last updated: <strong>October 25, 2026</strong> &middot; Refresh cadence: <strong>QUARTERLY</strong> &middot; Trend tracking starts with this edition except where a prior-period figure is shown.</p>
+<h1>Overlay Management Fees &amp; Tax Overlay Value — Market Data</h1>
+<p>An overlay manager&#x27;s job is to make a portfolio behave — to hold its risk, currency, and tax profile steady while the underlying managers do whatever they were hired to do. It is quiet work, priced in basis points, and its value shows up in places that never appear on a performance chart: taxes not paid, trades not duplicated, collateral not stranded.</p>
+<p>Public pricing for overlay mandates is thin, because most mandates are negotiated and never disclosed. What is public is better than nothing: a worked fee example from a major manager, and a stack of published research on the tax value that overlays and tax-aware implementation can add. This page reports both, and labels the worked example as exactly that — an example, not a market average.</p>
+
+<h2>Overlay fees: the published worked example</h2>
+<table class="dp-table"><thead><tr><th>Figure</th><th>Value</th><th>Trend vs prior period</th><th>Source</th></tr></thead><tbody>
+<tr><td>Two overlay managers at 10 bps on a $500 million plan (LGIM example)</td><td>$500,000 per year total</td><td>Worked example, not a market average<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://am-cms.landg.us.com/globalassets/lgima/insights/whitepapers/rethinking-overlay-manager-diversification.pdf">Legal &amp; General Investment Management America — Rethinking Overlay Manager Diversification</a></td></tr>
+<tr><td>Same plan consolidated to one manager at 8 bps (LGIM example)</td><td>$400,000 per year — $100,000 per year saved vs the split arrangement</td><td>Comparison within the same worked example<br><span class="trend-down">▼ $100k/yr lower in the example</span></td><td><a href="https://am-cms.landg.us.com/globalassets/lgima/insights/whitepapers/rethinking-overlay-manager-diversification.pdf">Legal &amp; General Investment Management America — Rethinking Overlay Manager Diversification</a></td></tr>
+</tbody></table>
+<h2>Tax overlay value: published research ranges</h2>
+<table class="dp-table"><thead><tr><th>Figure</th><th>Value</th><th>Trend vs prior period</th><th>Source</th></tr></thead><tbody>
+<tr><td>Tax-loss harvesting alpha, 15-year horizon (Vanguard 2024 research)</td><td>About 0.47% to 1.27% per year in additional after-tax return</td><td>No prior-period figure from the same source<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://www.donohuewealth.com/resources/articles/an-exploration-of-tax-alpha-and-direct-indexing">Vanguard 2024 research, via Donohue Wealth summary</a></td></tr>
+<tr><td>Tax alpha estimate (Parametric Portfolio Associates)</td><td>Up to 2% per year</td><td>No prior-period figure from the same source<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://www.donohuewealth.com/resources/articles/an-exploration-of-tax-alpha-and-direct-indexing">Parametric estimate, via Donohue Wealth summary</a></td></tr>
+<tr><td>Tax-loss harvesting contribution (Vanguard Advisor&#x27;s Alpha)</td><td>Up to 150 basis points or more per year</td><td>No prior-period figure from the same source<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://www.donohuewealth.com/resources/articles/an-exploration-of-tax-alpha-and-direct-indexing">Vanguard Advisor&#x27;s Alpha, via Donohue Wealth summary</a></td></tr>
+<tr><td>Tax-smart SMA after-tax improvement (J.P. Morgan simulation)</td><td>Roughly 100–120 basis points over five-year periods with starting years from 2003 to 2019</td><td>Simulation across multiple starting years<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://am.jpmorgan.com/us/en/asset-management/adv/insights/portfolio-insights/taxes/save-more-alpha-in-a-separately-managed-account/">J.P. Morgan Asset Management — Tax-Smart SMA research</a></td></tr>
+<tr><td>Direct indexing vs ETF-based harvesting (Journal of Beta Investment Strategies, 2023)</td><td>Direct indexing harvested 1.9 to 2.1 times more capital loss than an ETF-based strategy over 10 years</td><td>No prior-period figure from the same source<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://www.donohuewealth.com/resources/articles/an-exploration-of-tax-alpha-and-direct-indexing">Journal of Beta Investment Strategies (2023), via Donohue Wealth summary</a></td></tr>
+<tr><td>Cost framing: taxes and trading vs expense ratios</td><td>Tax and trading costs can exceed management-fee differences by an order of magnitude — the reason fee-only comparisons mislead taxable investors</td><td>Qualitative research finding, not a single figure<br><span class="trend-base">● Baseline (October 2026)</span></td><td><a href="https://alphaarchitect.com/is-active-alpha-enough-to-cover-taxes/">Arnott, Kalesnik &amp; Schuesler research, via Alpha Architect summary</a></td></tr>
+</tbody></table>
+
+<div class="dp-note"><h3>Methodology</h3><p>Included: the one fully worked public overlay fee example found (LGIM America) and published tax-alpha research ranges from Vanguard, Parametric, and J.P. Morgan. Excluded: any claimed &#x27;average overlay fee&#x27; — none was found in a public source this session, and averaging negotiated mandates from a single example would be invention. Tax-alpha ranges vary with tax bracket, portfolio size, and execution; the range, not a point estimate, is the honest figure.</p>
+<p>Trend labels: &ldquo;Baseline (October 2026) — trend tracking starts with the next refresh&rdquo; means no prior-period figure from the same source was available this session, so no movement is claimed. Where a prior figure is shown, the trend compares the current figure with that prior figure from the same source.</p></div>
+<div class="dp-note"><h3>Disclaimer</h3><p>Figures on this page are aggregated public estimates compiled for information only. They are not investment advice, professional advice, or an offer to buy or sell any security or asset. Figures change as sources revise or republish them; verify any figure against its linked source before relying on it.</p></div>
+<div class="dp-cta"><a class="btn" href="https://www.afternic.com/domain/portfoliooverlay.com">Buy portfoliooverlay.com — $15,000 on Afternic</a> &nbsp; <a href="mailto:info@primedomaincapital.com?subject=portfoliooverlay.com%20market%20data%20inquiry">info@primedomaincapital.com</a></div>
+<p>This domain is offered by Prime Domain Capital. Contact only at <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a>.</p>
+<section class="dp-changelog"><h2>Changelog</h2>
+<ul><li><strong>October 2026:</strong> First edition, published as a staged page. Figures compiled from the public sources listed in SOURCES.md, with trend indicators and baseline labels as shown above. Next refresh follows the QUARTERLY cadence in SOURCES.md; the sitemap lastmod for this page is to be updated on every refresh once deployed.</li></ul></section>
+</main>
+<footer>Offered by <strong>Prime Domain Capital</strong> &middot; <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script>
+<p class="back-home" style="display:block;text-align:center;padding:28px 16px;font-size:15px"><a href="https://portfoliooverlay.com/" style="color:inherit">&larr; Back to portfoliooverlay.com</a></p>
+</body>
+</html>
